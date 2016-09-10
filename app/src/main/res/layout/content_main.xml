@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.animeforum.android.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="#393939">
+    android:background="#faaf38">
 
 
     <TextView
@@ -24,30 +24,9 @@
         android:layout_alignParentStart="true"
         android:textAlignment="center"
         android:singleLine="false"
-        android:textSize="48dp"
+        android:textSize="52dp"
         android:layout_centerInParent="true"
         android:textColor="#fff"
         android:fontFamily="@string/title_activity_main" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/btnlogin"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="80dp"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@string/common_signin_button_text"
-        android:textSize="36dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign-Up"
-        android:id="@+id/btnsignup"
-        android:fontFamily="@string/common_signin_button_text"
-        android:textSize="36dp"
-        android:singleLine="true"
-        android:layout_alignTop="@+id/btnlogin"
-        android:layout_alignParentStart="true" />
 </RelativeLayout>

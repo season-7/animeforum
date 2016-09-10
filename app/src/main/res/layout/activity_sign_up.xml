@@ -7,6 +7,71 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.animeforum.android.SignUpActivity">
+    tools:context="com.animeforum.android.SignUpActivity"
+    android:background="#FAAF38">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIMEFORUM"
+        android:id="@+id/lbl_heading"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="52dp"
+        android:textIsSelectable="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_email"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:text="Enter Email Address"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txt_password"
+        android:text="Enter Your Password"
+        android:textAlignment="center"
+        android:layout_below="@+id/txt_email"
+        android:layout_alignParentStart="true"
+        android:textSize="36dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/btnsignup"
+        android:layout_below="@+id/txt_password"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="36dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:id="@+id/btnlogin"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        android:layout_below="@+id/btnsignup"
+        android:layout_alignParentEnd="true"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textColor="#ffffff" />
+
 
 </RelativeLayout>
