@@ -23,14 +23,13 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Firebase.setAndroidContext(this);
 
-        btnsignup.setOnClickListener(new View.OnClickListener() {
             mEmailField = (EditText) findViewById(R.id.txt_email);
             mPasswordField = (EditText) findViewById(R.id.txt_password);
 
             Firebase ref = new Firebase("https://animeforum-54f62.firebaseio.com");
             ref.createUser("mEmailField", "mPasswordField", new Firebase.ValueResultHandler<Map<String, Object>>() {
                 @Override
-                public void onSuccess(Map<String, Object> result) {
+                public void onSuccess(Map<String, Object> result ) {
                     System.out.println("Successfully created user account with uid: " + result.get("uid"));
                 }
 
